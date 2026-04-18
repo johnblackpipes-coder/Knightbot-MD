@@ -1,30 +1,156 @@
-require('dotenv').config();
-
-global.APIs = {
-    xteam: 'https://api.xteam.xyz',
-    dzx: 'https://api.dhamzxploit.my.id',
-    lol: 'https://api.lolhuman.xyz',
-    violetics: 'https://violetics.pw',
-    neoxr: 'https://api.neoxr.my.id',
-    zenzapis: 'https://zenzapis.xyz',
-    akuari: 'https://api.akuari.my.id',
-    akuari2: 'https://apimu.my.id',
-    nrtm: 'https://fg-nrtm.ddns.net',
-    bg: 'http://bochil.ddns.net',
-    fgmods: 'https://api-fgmods.ddns.net'
-};
-
-global.APIKeys = {
-    'https://api.xteam.xyz': 'd90a9e986e18778b',
-    'https://api.lolhuman.xyz': '85faf717d0545d14074659ad',
-    'https://api.neoxr.my.id': 'yourkey',
-    'https://violetics.pw': 'beta',
-    'https://zenzapis.xyz': 'yourkey',
-    'https://api-fgmods.ddns.net': 'fg-dylux'
-};
-
 module.exports = {
-    WARN_COUNT: 3,
-    APIs: global.APIs,
-    APIKeys: global.APIKeys
+    // Bot identity
+    botName: "GroupManager",
+    version: "1.0.0",
+    
+    // Owner (Super Admin)
+    owner: {
+        name: "JohnBlackPipes",
+        number: "27842469788@s.whatsapp.net", // Your WhatsApp ID
+        email: "johnblack@jozinites.co.za"
+    },
+    
+    // Group Assignments (Critical for your use case)
+    groupAssignments: {
+        // Format: groupID: { admin: "number", moderators: ["number1", "number2"] }
+        "27842469788@g.us: {
+            name: "Jozi Nites Spaza",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["27842469788@s.whatsapp.net"],
+            settings: {
+                antiLink: true,
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 300000 // 5 minutes default
+            }
+        },
+        "27842469788@g.us": {
+            name: "Game Nite",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["27842469788@s.whatsapp.net"],
+            settings: {
+                antiLink: false, // More relaxed
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 600000 // 10 minutes
+            }
+        }
+         "27842469788@g.us": {
+            name: "Jozi Nites Indaba Events",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["27840386110@s.whatsapp.net"],
+            settings: {
+                antiLink: false, // More relaxed
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 600000 // 10 minutes
+              }
+        }
+         "27842469788@g.us": {
+            name: "Jozi Nites Thoughts",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["276523715190@s.whatsapp.net","278357490380@s.whatsapp.net" ],
+            settings: {
+                antiLink: false, // More relaxed
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 600000 // 10 minutes
+               }
+        }
+         "27842469788@g.us": {
+            name: "Jozi Nites Snap",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["276447705490@s.whatsapp.net"],
+            settings: {
+                antiLink: false, // More relaxed
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 600000 // 10 minutes
+                }
+        }
+         "27842469788@g.us": {
+            name: "Agony Aunt & Confession",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["27842469788@s.whatsapp.net"],
+            settings: {
+                antiLink: false, // More relaxed
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 600000 // 10 minutes
+                 }
+        }
+         "27842469788@g.us": {
+            name: "Jozi Nites Podcast",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["27842469788@s.whatsapp.net"],
+            settings: {
+                antiLink: false, // More relaxed
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 600000 // 10 minutes
+                }
+        }
+         "27842469788@g.us": {
+            name: "Jozi Nites Writers Blok",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["27842469788@s.whatsapp.net"],
+            settings: {
+                antiLink: false, // More relaxed
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 600000 // 10 minutes
+                }
+        }
+         "27842469788@g.us": {
+            name: "Jozi Nites Market",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["27842469788@s.whatsapp.net"],
+            settings: {
+                antiLink: false, // More relaxed
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 600000 // 10 minutes
+                }
+        }
+         "27842469788@g.us": {
+            name: "Jozi Nites Sneaky Links",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["27842469788@s.whatsapp.net"],
+            settings: {
+                antiLink: false, // More relaxed
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 600000 // 10 minutes
+                }
+        }
+         "27842469788@g.us": {
+            name: "Jozi Nites Academy",
+            admin: "27842469788@s.whatsapp.net",
+            moderators: ["27842469788@s.whatsapp.net"],
+            settings: {
+                antiLink: false, // More relaxed
+                antiSpam: true,
+                welcomeMessage: true,
+                muteDuration: 600000 // 10 minutes
+                }
+        }
+         
+    },
+    
+    // Global settings
+    publicMode: false, // Restrict to assigned admins/mods only
+    autoRead: true,
+    autoTyping: false,
+    autoRecord: false,
+    
+    // Command prefixes
+    prefix: ".",
+    
+    // Features
+    features: {
+        antiDelete: true,  // Detect deleted messages
+        antiViewOnce: true, // Save view-once media
+        autoSticker: false, // Convert images to stickers automatically
+        levelUp: false // XP system (optional gamification)
+    }
 };
