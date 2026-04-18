@@ -34,7 +34,7 @@ module.exports = {
                 welcomeMessage: true,
                 muteDuration: 600000 // 10 minutes
             }
-        }
+        },
          "27842469788@g.us": {
             name: "Jozi Nites Indaba Events",
             admin: "27842469788@s.whatsapp.net",
@@ -44,8 +44,8 @@ module.exports = {
                 antiSpam: true,
                 welcomeMessage: true,
                 muteDuration: 600000 // 10 minutes
-              }
-        }
+            }
+        },
          "27842469788@g.us": {
             name: "Jozi Nites Thoughts",
             admin: "27842469788@s.whatsapp.net",
@@ -55,8 +55,8 @@ module.exports = {
                 antiSpam: true,
                 welcomeMessage: true,
                 muteDuration: 600000 // 10 minutes
-               }
-        }
+            }
+        },
          "27842469788@g.us": {
             name: "Jozi Nites Snap",
             admin: "27842469788@s.whatsapp.net",
@@ -66,8 +66,8 @@ module.exports = {
                 antiSpam: true,
                 welcomeMessage: true,
                 muteDuration: 600000 // 10 minutes
-                }
-        }
+            }
+        },
          "27842469788@g.us": {
             name: "Agony Aunt & Confession",
             admin: "27842469788@s.whatsapp.net",
@@ -77,8 +77,8 @@ module.exports = {
                 antiSpam: true,
                 welcomeMessage: true,
                 muteDuration: 600000 // 10 minutes
-                 }
-        }
+            }
+        },
          "27842469788@g.us": {
             name: "Jozi Nites Podcast",
             admin: "27842469788@s.whatsapp.net",
@@ -88,8 +88,8 @@ module.exports = {
                 antiSpam: true,
                 welcomeMessage: true,
                 muteDuration: 600000 // 10 minutes
-                }
-        }
+            }
+        },
          "27842469788@g.us": {
             name: "Jozi Nites Writers Blok",
             admin: "27842469788@s.whatsapp.net",
@@ -99,8 +99,8 @@ module.exports = {
                 antiSpam: true,
                 welcomeMessage: true,
                 muteDuration: 600000 // 10 minutes
-                }
-        }
+            }
+        },
          "27842469788@g.us": {
             name: "Jozi Nites Market",
             admin: "27842469788@s.whatsapp.net",
@@ -110,8 +110,8 @@ module.exports = {
                 antiSpam: true,
                 welcomeMessage: true,
                 muteDuration: 600000 // 10 minutes
-                }
-        }
+            }
+        },
          "27842469788@g.us": {
             name: "Jozi Nites Sneaky Links",
             admin: "27842469788@s.whatsapp.net",
@@ -121,8 +121,8 @@ module.exports = {
                 antiSpam: true,
                 welcomeMessage: true,
                 muteDuration: 600000 // 10 minutes
-                }
-        }
+            }
+        },
          "27842469788@g.us": {
             name: "Jozi Nites Academy",
             admin: "27842469788@s.whatsapp.net",
@@ -132,9 +132,8 @@ module.exports = {
                 antiSpam: true,
                 welcomeMessage: true,
                 muteDuration: 600000 // 10 minutes
-                }
+            }
         }
-         
     },
     
     // Global settings
