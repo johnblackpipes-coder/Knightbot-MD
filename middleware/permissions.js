@@ -46,4 +46,16 @@ class PermissionManager {
     }
 }
 
+module.exports = new PermissionManager();        
+        const hierarchy = {
+            'superadmin': 4,
+            'admin': 3,
+            'moderator': 2,
+            'member': 1
+        };
+
+        return hierarchy[userLevel] >= hierarchy[commandLevel];
+    }
+}
+
 module.exports = new PermissionManager();
